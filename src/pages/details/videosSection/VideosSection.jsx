@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 
 import "./style.scss";
 
@@ -8,6 +9,7 @@ import VideoPopup from "../../../components/videoPopup/VideoPopup.jsx";
 import { PlayIcon } from "../Playbtn";
 import Img from "../../../components/lazyLoadImages/Img";
 
+// eslint-disable-next-line react/prop-types
 const VideosSection = ({ data, loading }) => {
     const [show, setShow] = useState(false);
     const [videoId, setVideoId] = useState(null);

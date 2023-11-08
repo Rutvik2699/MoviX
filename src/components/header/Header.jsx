@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { HiOutlineSearch } from "react-icons/hi";
 import { SlMenu } from "react-icons/sl";
 import { VscChromeClose } from "react-icons/vsc";
@@ -43,6 +43,7 @@ const Header = () => {
       return () =>{
         window.removeEventListener("scroll",controlNavbar)
       }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[lastScrollY])
 
 
